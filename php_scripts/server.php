@@ -5,7 +5,7 @@
 		$host = "localhost";
 		$user = "admin";
 		$password = "password";
-		$db = "info2180_bugme_issue_tracker";
+		$db = "BugMe";
 		return new PDO("mysql:host=$host;dbname=$db", $user, $password);
 	}
 ?>

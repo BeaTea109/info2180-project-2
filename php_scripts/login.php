@@ -6,7 +6,7 @@
 
 	/* Handles User login  */
 	$contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
-
+	
 	if ($contentType !== "application/json" && !isset($_POST))
 		exit(json_encode(errMsg("")));
 
@@ -24,7 +24,7 @@
 	
 	$stmt->execute();	
 	$result = $stmt->fetch();
-
+	echo "<script>console.log(" + $result + ")</script>";
 	// Checking if user is present in database
 	// Returns an error otherwise
 	if(!$result)

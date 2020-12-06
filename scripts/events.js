@@ -23,14 +23,14 @@ export function windowLoad(){
 			let logInBtn = document.querySelector("#loginBtn");
 			email = document.querySelector("#email"); 
 			password = document.querySelector("#pword");
-
+			
 			if(logInBtn == null){
 				retrieveIssues("ALL");
 				return ;
 			}
 
 			loginSubmission(logInBtn);
-		});
+		}).catch((err) => console.log(err));
 }
 
 // Login
@@ -59,7 +59,7 @@ export function loginSubmission(logInBtn){
 						mainView.innerHTML = response["body"];
 						retrieveIssues("ALL");
 					});
-			});
+			}).catch((err) => console.log(err));
 	});
 }
 
@@ -80,7 +80,7 @@ export function pageRenderQuery(e, page){
 
 			if(logInBtn != null)
 				loginSubmission(logInBtn);
-		});
+		}).catch((err) => console.log(err));
 }
 
 // Makes FETCH POST request to add new user
@@ -92,7 +92,7 @@ export async function newUserQuery(userInfo){
 			"Accept": "application/json"
 		},
 		body: JSON.stringify(userInfo)
-	});
+	}).catch((err) => console.log(err));
 
 	return userAdded.json();
 }

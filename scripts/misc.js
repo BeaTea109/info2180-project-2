@@ -12,7 +12,6 @@ export async function login(email, password){
 			"password": password.value,
 		})
 	});
-
 	return response.json();
 }
 
