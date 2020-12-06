@@ -1,0 +1,82 @@
+<div id="wrapper">
+	<div class="sidebar">
+		<div class="sidebar_container">
+			<div class="sideItems">
+				<img id="home" src= "/assets/home.png" width= 20px height=20px> 
+				<a href="" class="home">Home</a>
+			</div>
+
+			<div class="sideItems">
+				<img id="phone" src= "/assets/addUser.png" width= 20px height=20px>
+				<a href ="" class="addUserPage">Add User</a>
+			</div>
+
+			<div class="sideItems">
+				<img id="phone" src= "/assets/newIssue.png" width= 20px height=20px>
+				<a href="" class="createIssue">New Issue</a> </div>
+
+			<div class="sideItems">
+				<img id="phone" src= "/assets/logout.png" width= 20px height=20px>
+				<a href="" class="logout">Logout</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="content">
+		<div id="details">
+
+			<div id="details_header">
+				<h1 id="details_main_title"></h1>
+				<h5 id="details_subtitle"></h5>
+			</div>
+
+			<div id="details_content">
+
+				<div id="issue_desc">
+				</div>
+				
+				<div id="issue_date_details">
+					<ul>
+						<li id="created"></li>
+						<li id="updated"></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="details_side_content">
+
+				<div id="side_content_info">
+
+					<div id="assigned_to">
+						<h5>Assigned To</h5>
+						<p></p>
+					</div>
+
+					<div id="type">
+						<h5>Type: </h5>
+						<p></p>
+					</div>
+
+					<div id="priority">
+						<h5>Priority: </h5>
+						<p></p>
+					</div>
+
+					<div id="status">
+						<h5>Status: </h5>
+						<p></p>
+					</div>
+
+				</div>
+
+				<button id="closed" class="detailsBtn closed">Mark as Closed</button>
+				<button id="progress" class="detailsBtn in_progress">Mark In Progress</button>
+				<input type="hidden" value="" id="issueIDHidden">
+
+			</div>
+
+		</div>
+	</div>
+</div>

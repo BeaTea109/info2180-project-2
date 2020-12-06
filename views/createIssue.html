@@ -1,0 +1,56 @@
+<div id="wrapper">
+	<div class="sidebar">
+		<div class="sidebar_container">
+			<div class="sideItems">
+				<img id="home" src= "/assets/home.png" width= 20px height=20px> 
+				<a href="" class="home">Home</a>
+			</div>
+
+			<div class="sideItems">
+				<img id="phone" src= "/assets/addUser.png" width= 20px height=20px>
+				<a href ="" class="addUserPage">Add User</a>
+			</div>
+
+			<div class="sideItems">
+				<img id="phone" src= "/assets/newIssue.png" width= 20px height=20px>
+				<a href="" class="createIssue">New Issue</a>
+			</div>
+
+			<div class="sideItems">
+				<img id="phone" src= "/assets/logout.png" width= 20px height=20px>
+				<a href="" class="logout">Logout</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="content"> 
+		<h1>Create Issue</h1>
+
+		<form id="newIssueForm">	
+			<label>Title</label>
+			<input type="text" id ="title" class="title"> 
+
+			<label>Description</label>
+			<input type="text" id = "description" class="description">
+
+			<label>Assigned To</label>
+			<select name="assigned_to" id="assigned_to">
+			</select>
+
+			<label> Type</label>
+			<select name="type" id="type">
+					<option value="Bug">Bug</option>
+					<option value="Proposal">Proposal</option>
+					<option value="Task">Task</option>
+				  </select>
+			<label>Priority</label>
+			<select name="priority" id="priority">
+					<option value="Minor">Minor</option>
+					<option value="Major">Major</option>
+					<option value="Critical">Critical</option>
+				</select>
+			<button id = "btn" class="newIssueBtn" style = "color:white"> Submit </button>
+		</form>
+	</div>
+</div>

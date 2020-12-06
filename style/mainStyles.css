@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif, Arial; 
+}
+
+html, body{
+	height: 100%;
+}
+
+body{
+	font-size: 15px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 1fr 20fr;
+}
+
+/* Header for all pages */
+.header{
+	display: flex;
+	align-items: center;
+	grid-column: 1 / -1;
+	padding: 10px 25px;
+	grid-row: 1;
+	background-color: #000;
+}
+
+.header h4 {
+	margin-left: 10px;
+	color: #fff;
+}
+
+#logo{
+	width: 15px;	
+	height: 15px;
+}
+
+
+/* For every page with an image */
+img{
+    border-radius: 50%;
+    background-color: white;
+}
+
+.newIssue{
+	background-color: rgb(74, 143, 74);
+	width: 180px;
+	height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+}
+

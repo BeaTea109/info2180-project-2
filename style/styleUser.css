@@ -1,0 +1,43 @@
+/* Stylesheet for new user */
+.newUserBtn{ 
+	background-color: rgb(9, 72, 134);
+	color: #fff;
+	width: 160px;
+    height: 38px;
+    text-align: center;
+    border: 1px solid rgb(9, 72, 134);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px rgb(29, 33, 83);
+}
+
+#newUserForm{
+	width: 60%;
+	height: 60%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+input {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #F8F8F8;
+    box-shadow: 1px 1px 1px 1px rgb(175, 175, 175);
+}
+
+label{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+.error{
+    background-color : rgb(190, 79, 79);
+}
+

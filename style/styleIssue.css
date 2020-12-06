@@ -1,0 +1,62 @@
+/* Stylesheet for Create Issue page */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.newIssueBtn{ 
+	background-color: rgb(9, 72, 134);
+	width: 160px;
+    height: 38px;
+    text-align: center;
+    border: 1px solid rgb(9, 72, 134);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px rgb(29, 33, 83);
+    
+}
+
+#newIssueForm{
+	width: 60%;
+	height: 60%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+input {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #F8F8F8;
+    box-shadow: 1px 1px 1px 1px rgb(175, 175, 175);
+}
+
+label{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+.open{
+  background-color: rgb(114, 223, 114);
+  color: white;
+}
+
+.closed{
+  background-color: rgb(231, 76, 76);
+  color: white;
+}
+
+.inProgress{
+  background-color: yellow;
+  color: black;
+}
